@@ -20,8 +20,8 @@ public class MockRepository implements AccountRepository{
 	public Mono<Account> getNumber(String number) {
 		Account liability = new Account();
 		liability.setNumber("123-0544581-0254");
-		liability.setType(AccountType.CURRENT);
-		liability.setCurrencyName("Soles");
+		liability.setAccountType("AHORRO");
+		liability.setCurrencyName("SOLES");
 		liability.setAmount(BigDecimal.valueOf(25145.38));
 		return Mono.just(liability);
 	}

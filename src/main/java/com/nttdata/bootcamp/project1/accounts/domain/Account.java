@@ -9,7 +9,7 @@ public class Account {
 
 	private String number;
 	private Integer userId;
-	private AccountType type;
+	private String accountType;
 	private String currencyName;
 	private BigDecimal amount;
 

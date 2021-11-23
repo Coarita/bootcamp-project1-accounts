@@ -41,12 +41,12 @@ public class AccountController {
 		return accountOperations.create(entity);
 	}
 	
-	@PutMapping("/{number}")
+	@PutMapping("/update/{number}")
 	public Mono<Account> put(@PathVariable String number, @RequestBody Mono<Account> entity) {
 		return accountOperations.update(number, entity);
 	}
 	
-	@DeleteMapping("/{number}")
+	@DeleteMapping("/delete/{number}")
 	public Mono<Void> delete(@PathVariable String number) {
 		return accountOperations.delete(number);
 	}
